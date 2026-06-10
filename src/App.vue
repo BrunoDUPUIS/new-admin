@@ -9,12 +9,20 @@ import content from '../content/home.json'
       {{ content.paragraph }}
     </p>
   </div>
+  <div>
+    <img :src="content.picture" alt="logo artisan" class="image" />
+  </div>
 </template>
 
 <style scoped>
+.image {
+  margin: 0 auto;
+  width: 500px;
+}
 h1 {
   color: blueviolet;
   text-align: center;
+  margin-top: 45px;
 }
 
 p {
